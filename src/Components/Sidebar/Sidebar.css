@@ -1,0 +1,17 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4rem;
+    transition: all 300ms ease;
+}
+.logo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    gap: 1rem;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
