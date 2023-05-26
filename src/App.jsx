@@ -1,4 +1,5 @@
 import './App.css'
+import MainDash from './Components/MainDash/MainDash'
 import Sidebar from './Components/Sidebar/Sidebar'
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     <div className='App'>
      <div className="AppGlass">
       <Sidebar />
+      <MainDash />
+      <div></div>
      </div>
     </div>
   )
