@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import MainDash from "./Components/MainDash/MainDash";
 import RightSide from "./Components/RightSide/RightSide";
 import Sidebar from "./Components/Sidebar/Sidebar";

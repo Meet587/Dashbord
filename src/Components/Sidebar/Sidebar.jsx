@@ -18,6 +18,7 @@ const Sidebar = () => {
   };
   return (
     <>
+    
       <motion.div
         className="bars"
         style={expended ? { left: "60%" } : { left: "5%" }}

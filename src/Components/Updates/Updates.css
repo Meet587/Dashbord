@@ -1,6 +1,6 @@
 .Updates{
     width: 85%;
-    background: white;
+    background: var(--table-bg-color);
     border-radius: 0.7rem;
     padding: 1rem;
     gap: 1rem;

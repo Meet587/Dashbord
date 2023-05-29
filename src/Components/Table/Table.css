@@ -1,3 +1,7 @@
+.MuiTable-root{
+    background: var(--table-bg-color);
+    color: var(--color-white);
+}
 .MuiTableRow-root>*{
     padding: 10px;
 }
