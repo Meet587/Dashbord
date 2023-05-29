@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, LayoutGroup } from "framer-motion";
+import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import "./Card.css";
 import { UilTimes } from "@iconscout/react-unicons";
 import Chart from "react-apexcharts";
@@ -7,15 +7,17 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const Card = (props) => {
-  const [expended, setExpended] = useState(true);
+  const [expended, setExpended] = useState(false);
   return (
-    <LayoutGroup id="a">
-      {expended ? (
-        <ExpendedCard param={props} setExpended={() => setExpended(false)} />
-      ) : (
-        <CompactCard param={props} setExpended={() => setExpended(true)} />
-      )}
-    </LayoutGroup>
+   
+      <LayoutGroup>
+        {expended ? (
+          <ExpendedCard param={props} setExpended={() => setExpended(false)} />
+        ) : (
+          <CompactCard param={props} setExpended={() => setExpended(true)} />
+        )}
+      </LayoutGroup>
+
   );
 };
 
@@ -58,30 +60,30 @@ function ExpendedCard({ param, setExpended }) {
       },
       dropShadow: {
         enbled: false,
-        enabledOnSeries:undefined,
-        top:0,
-        left:0,
-        blur:3,
-        color:"#000",
-        opacity:0.35
+        enabledOnSeries: undefined,
+        top: 0,
+        left: 0,
+        blur: 3,
+        color: "#000",
+        opacity: 0.35,
       },
-      fill:{
-        color:['#fff'],
-        type:'gradient',
+      fill: {
+        color: ["#fff"],
+        type: "gradient",
       },
-      dataLabels:{
-        enabled: false
+      dataLabels: {
+        enabled: false,
       },
       stroke: {
-        curve: 'smooth',
-        colors:['#fff']
+        curve: "smooth",
+        colors: ["#fff"],
       },
       tooltip: {
-        x:{
+        x: {
           format: "dd/MM/yy HH:mm",
         },
       },
-      grid:{
+      grid: {
         show: true,
       },
       // xaxis:{
@@ -98,7 +100,10 @@ function ExpendedCard({ param, setExpended }) {
       }}
       layoutId="expandableCard"
     >
-      <div onClick={setExpended}>
+      <div
+        onClick={setExpended}
+        style={{ alignSelf: "flex-end", cursor: "pointer", color: "white" }}
+      >
         <UilTimes />
       </div>
       <span>{param.title}</span>

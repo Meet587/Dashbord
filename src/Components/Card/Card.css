@@ -57,3 +57,47 @@
 .detail>span:nth-child(3){
     font-size: 12px;
 }
+
+.ExpendedCard{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    z-index: 9;
+    left: 13rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ExpendedCard>span:nth-of-type(1){
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+}
+.ExpendedCard>span:nth-of-type(2){
+    color: rgb(224, 224, 224);
+    font-size: 16px;
+}
+.chartContainer{
+    width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+    .ExpendedCard {
+        top: 2rem;
+        height: 70vh;
+        left: 6rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ExpendedCard{
+        top: 8rem;
+        height: 50vh;
+        left: 15px;
+        width: 80%;
+    }
+}
