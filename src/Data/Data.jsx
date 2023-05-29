@@ -9,10 +9,9 @@ import {
   UilMoneyWithdrawal,
   UilSignOutAlt,
 } from "@iconscout/react-unicons";
-import img1 from '../assets/imgs/img1.png'
-import img2 from '../assets/imgs/img2.png'
-import img3 from '../assets/imgs/img3.png'
-
+import img1 from "../assets/imgs/img1.png";
+import img2 from "../assets/imgs/img2.png";
+import img3 from "../assets/imgs/img3.png";
 
 // Sidebar Data
 export const SidebarData = [
@@ -41,7 +40,7 @@ export const SidebarData = [
 // Card Data
 export const CardData = [
   {
-    id:1,
+    id: 2,
     title: "Sales",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
@@ -58,7 +57,7 @@ export const CardData = [
     ],
   },
   {
-    id:2,
+    id: 3,
     title: "Revenue",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
@@ -75,7 +74,7 @@ export const CardData = [
     ],
   },
   {
-    id:3,
+    id: 4,
     title: "Expenses",
     color: {
       backGround: "linear-gradient(180deg, #f8d49a 0%, #ffca71 100%)",
@@ -96,20 +95,20 @@ export const CardData = [
 export const UpdateData = [
   {
     img: img1,
-    name: 'Meet Rakholiya',
-    noti: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-    time: "25 sec ago"
+    name: "Meet Rakholiya",
+    noti: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    time: "25 sec ago",
   },
   {
     img: img2,
-    name: 'Meet Rakholiya',
-    noti: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-    time: "30 min ago"
+    name: "Meet Rakholiya",
+    noti: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    time: "30 min ago",
   },
   {
     img: img3,
-    name: 'Meet Rakholiya',
-    noti: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-    time: "2 hours ago"
-  }
-]
+    name: "Meet Rakholiya",
+    noti: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    time: "2 hours ago",
+  },
+];

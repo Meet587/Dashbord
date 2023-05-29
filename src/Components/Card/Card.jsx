@@ -9,15 +9,13 @@ import "react-circular-progressbar/dist/styles.css";
 const Card = (props) => {
   const [expended, setExpended] = useState(false);
   return (
-   
-      <LayoutGroup>
-        {expended ? (
-          <ExpendedCard param={props} setExpended={() => setExpended(false)} />
-        ) : (
-          <CompactCard param={props} setExpended={() => setExpended(true)} />
-        )}
-      </LayoutGroup>
-
+    <>
+      {expended ? (
+        <ExpendedCard param={props} setExpended={() => setExpended(false)} />
+      ) : (
+        <CompactCard param={props} setExpended={() => setExpended(true)} />
+      )}
+    </>
   );
 };
 
@@ -31,7 +29,7 @@ function CompactCard({ param, setExpended }) {
         background: param.color.backGround,
         boxShadow: param.color.boxShadow,
       }}
-      layoutId="expandableCard"
+      layoutId={param.id}
       onClick={setExpended}
     >
       <div className="radialBar">
@@ -98,7 +96,7 @@ function ExpendedCard({ param, setExpended }) {
         background: param.color.backGround,
         boxShadow: param.color.boxShadow,
       }}
-      layoutId="expandableCard"
+      layoutId={param.id}
     >
       <div
         onClick={setExpended}
