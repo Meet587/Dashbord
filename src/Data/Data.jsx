@@ -13,6 +13,21 @@ import img1 from "../assets/imgs/img1.png";
 import img2 from "../assets/imgs/img2.png";
 import img3 from "../assets/imgs/img3.png";
 
+const CardDark = {
+  Card1: {
+    backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+    boxShadow: "0px 10px 20px 0px #e0c6f5",
+  },
+  Card2: {
+    backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
+    boxShadow: "0px 10px 20px 0px #fdc0c7",
+  },
+  Card3: {
+    backGround: "linear-gradient(180deg, #f8d49a 0%, #ffca71 100%)",
+    boxShadow: "0px 10px 20px 0px #f9d59b",
+  },
+};
+
 // Sidebar Data
 export const SidebarData = [
   {
@@ -42,10 +57,7 @@ export const CardData = [
   {
     id: 2,
     title: "Sales",
-    color: {
-      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
-    },
+    color: CardDark.Card1,
     barValue: 70,
     value: "25,970",
     png: UilUsdSquare,
@@ -59,10 +71,7 @@ export const CardData = [
   {
     id: 3,
     title: "Revenue",
-    color: {
-      backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
-      boxShadow: "0px 10px 20px 0px #fdc0c7",
-    },
+    color: CardDark.Card2,
     barValue: 80,
     value: "14,270",
     png: UilMoneyWithdrawal,
@@ -76,10 +85,7 @@ export const CardData = [
   {
     id: 4,
     title: "Expenses",
-    color: {
-      backGround: "linear-gradient(180deg, #f8d49a 0%, #ffca71 100%)",
-      boxShadow: "0px 10px 20px 0px #f9d59b",
-    },
+    color: CardDark.Card3,
     barValue: 60,
     value: "4,270",
     png: UilClipboardAlt,

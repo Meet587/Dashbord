@@ -6,8 +6,8 @@ import ThemeSelector from "./Components/ThemeSelector/ThemeSelector.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeSelector>
+    {/* <ThemeSelector> */}
       <App />
-    </ThemeSelector>
+    {/* </ThemeSelector> */}
   </React.StrictMode>
 );
